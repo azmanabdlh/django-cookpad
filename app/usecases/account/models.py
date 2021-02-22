@@ -9,6 +9,9 @@ AVATAR_DEFAULT = 'https://avatars.dicebear.com/4.5/api/male/{}.svg'.format(rando
 
 class User(AbstractUser):
 
+  class Meta:
+    db_table = 'users'
+
   date_modified = models.DateTimeField(auto_now=True, null=True)
   avatar = models.ImageField(
     storage=fs,

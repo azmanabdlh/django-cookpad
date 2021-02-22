@@ -1,6 +1,10 @@
 from django.db import models
 
 class Recipe(models.Model):
+
+  class Meta:
+    db_table = 'recipes'
+
   title = models.CharField(max_length=200, null=False, blank=False)
   description = models.TextField(null=True)
   cook_long_time = models.CharField(max_length=100, null=True, blank=False)
