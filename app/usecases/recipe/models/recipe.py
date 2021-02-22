@@ -10,3 +10,5 @@ class Recipe(models.Model):
   updated_at = models.DateTimeField(auto_now=True, null=True)
 
 
+  def __str__(self):
+    return 'Recipe: {}'.format(self.title)
