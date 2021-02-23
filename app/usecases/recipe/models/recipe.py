@@ -2,7 +2,7 @@ from django.db import models
 from django.core.files.storage import FileSystemStorage
 from django.conf import settings
 
-from app.usecases.models import User
+from app.usecases.account.models import User
 
 fs = FileSystemStorage(location=settings.MEDIA_ROOT)
 
