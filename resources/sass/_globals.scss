@@ -1,6 +1,7 @@
 
 .container {
   margin: 0 auto;
+  width: 69.375rem;
   max-width: 69.375rem;
 }
 
@@ -67,7 +68,6 @@ ul {
   border-radius: 3px;
   cursor: pointer;
   font-weight: 400;
-  font-size: $font-sm;
 
   &-primary {
     background-color: $primary;

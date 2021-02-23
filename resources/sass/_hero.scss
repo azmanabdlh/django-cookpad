@@ -1,0 +1,32 @@
+.hero {
+	background-color: $light-white;
+	display: flex;
+	align-items: center;
+	min-height: 12.5rem;
+
+	h3 {
+		font-size: $font-lg;
+		font-weight: 500;
+	}
+	&__form {
+
+		.hero-form__field-group {
+			background-color: $white;
+			
+			display: inline-block;
+			border-radius: 3px;
+			padding: .5rem .7rem;
+			box-shadow: 0 2px 2px #eee;
+
+			input {
+				font-size: $font-md;
+				background: none;
+				border: none;
+			}
+			.btn {
+				font-size: $font-md;
+				padding: .5rem .8rem;
+			}
+		}
+	}
+}
