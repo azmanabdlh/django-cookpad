@@ -1,6 +1,22 @@
 {% extends 'layouts/app.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/views/recipes/index.css' %}">
+{% endblock head %}
 
 {% block content%}
-
-
+	<section class="hero">
+		<div class="container d-flex flex-col flex-jc-center flex-ai-center">
+			<img height="152px" width="223px" src="{% static 'img/cook.png' %}" alt="create own your recipe">
+			<main>
+				<h3 class="hero__recpe-title">Buat baru</h3>
+				<p class="hero__recpe-subtitle">Bagikan inspirasi masak bagi pengguna lainnya</p>
+				<form method="post">
+					{% csrf_token %}
+					<button type="submit" class="btn">Tambahkan</button>
+				</form>
+			</main>
+		</div>
+	</section>
 {% endblock content %}

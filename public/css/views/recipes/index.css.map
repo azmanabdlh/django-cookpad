@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,KAAM;EACL,UAAU,EAAE,MAAM;EAClB,wBAAmB;IAClB,SAAS,ECID,OAAO;IDHf,MAAM,EAAE,CAAC;IACT,UAAU,EAAE,KAAK;IACjB,WAAW,EAAE,GAAG;EAEjB,2BAAsB;IACrB,SAAS,ECJD,OAAM;IDKd,WAAW,EAAE,IAAI;IACjB,MAAM,EAAE,CAAC;EAIT,qBAAW;IACV,SAAS,ECVF,QAAQ",
+"sources": ["../../../../resources/sass/views/recipes/index.scss","../../../../resources/sass/_variabels.scss"],
+"names": [],
+"file": "index.css"
+}
