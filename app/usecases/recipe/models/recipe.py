@@ -20,7 +20,8 @@ class Recipe(models.Model):
   description = models.TextField(null=True)
   serves = models.IntegerField(null=True, blank=False)
   ingredients = models.JSONField(null=True, blank=False)
-  steps = models.JSONField(null=True, blank=False)
+  is_active = models.BooleanField(default=False)
+  is_deleted = models.BooleanField(default=False)
   user = models.ForeignKey(
       User, 
       on_delete=models.CASCADE, 
