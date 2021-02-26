@@ -24,11 +24,13 @@
   border: 1px dashed gray;
   cursor: pointer; }
   .hero .container {
-    position: relative; }
+    position: relative;
+    text-align: center;
+    min-height: 12.5rem; }
     .hero .container .actions {
       position: absolute;
       right: 0;
-      top: 0; }
+      top: .5rem; }
       .hero .container .actions .btn {
         font-size: 0.93rem;
         padding: .7rem 1rem; }
@@ -49,10 +51,95 @@
       font-weight: 600; }
   .form__grup {
     margin-bottom: .7rem; }
+    .form__grup.before-line::before {
+      content: '';
+      display: block;
+      margin: 1.25rem 0;
+      border-top: 1px dashed gray; }
     .form__grup label {
       margin-bottom: .6rem;
       display: block;
       font-weight: 600; }
+    .form__grup .input-list {
+      text-align: center; }
+      .form__grup .input-list .input__group .input__label {
+        width: 1.75rem;
+        height: 1.75rem;
+        font-weight: 600;
+        border: 2px solid #401C00;
+        border-radius: 50%;
+        margin-top: .3rem;
+        margin-right: .5rem; }
+      .form__grup .input-list .input__group .input-group-file {
+        display: flex;
+        flex-wrap: wrap; }
+        .form__grup .input-list .input__group .input-group-file .input__file {
+          cursor: pointer;
+          margin-bottom: 1rem;
+          border: 2px dashed gray;
+          display: flex;
+          margin-right: .5rem;
+          justify-content: center;
+          align-items: center;
+          width: 7rem;
+          height: 6.25rem; }
+          .form__grup .input-list .input__group .input-group-file .input__file:hover {
+            background-color: #ddd; }
+          .form__grup .input-list .input__group .input-group-file .input__file svg {
+            width: 1.5rem;
+            color: gray; }
+        .form__grup .input-list .input__group .input-group-file .input__file-uploaded {
+          width: 8rem;
+          margin-right: .5rem;
+          margin-bottom: .5rem;
+          height: 6.25rem;
+          box-shadow: 0 2px 4px #eee;
+          position: relative; }
+          .form__grup .input-list .input__group .input-group-file .input__file-uploaded .input__file-actions {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            position: absolute;
+            padding: .5rem;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(360deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.03)); }
+            .form__grup .input-list .input__group .input-group-file .input__file-uploaded .input__file-actions .btn {
+              background-color: white;
+              padding: .4rem .6rem; }
+              .form__grup .input-list .input__group .input-group-file .input__file-uploaded .input__file-actions .btn:hover {
+                background-color: #ddd; }
+              .form__grup .input-list .input__group .input-group-file .input__file-uploaded .input__file-actions .btn:not(:last-child) {
+                margin-right: .3rem; }
+              .form__grup .input-list .input__group .input-group-file .input__file-uploaded .input__file-actions .btn svg {
+                width: .9rem;
+                transform: scale(1.3); }
+              .form__grup .input-list .input__group .input-group-file .input__file-uploaded .input__file-actions .btn:last-child {
+                color: red; }
+          .form__grup .input-list .input__group .input-group-file .input__file-uploaded img {
+            width: 100%;
+            height: 100%;
+            border-radius: 3px; }
+      .form__grup .input-list .input {
+        margin-bottom: .9rem;
+        display: flex; }
+        .form__grup .input-list .input input {
+          border: none;
+          flex: 1; }
+        .form__grup .input-list .input .btn svg {
+          position: relative;
+          left: .3rem;
+          width: 1rem;
+          transform: scale(1.3);
+          color: red; }
+      .form__grup .input-list .btn__add {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: .7rem; }
     .form__grup .input {
       background-color: white;
       border: 1px solid #ADADAD;

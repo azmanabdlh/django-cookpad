@@ -1,10 +1,16 @@
 {% extends 'layouts/app.html' %}
 {% load static %}
 
+
+{% block title %}
+	Buat resep baru
+{% endblock title%}
+
+
 {% block head %}
-<link rel="stylesheet" href="{% static 'css/views/recipes/new.css' %}">
+<link rel="stylesheet" href="{% static 'css/views/recipes/new.css' %}?id=2">
 {% endblock head %}
 
 {% block content%}
-	{% include 'recipes/_form-first-step.html' %}
+	{% include 'recipes/_form-second-step.html' %}
 {% endblock content %}
