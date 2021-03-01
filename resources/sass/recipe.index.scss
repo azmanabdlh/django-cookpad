@@ -1,0 +1,40 @@
+@import 'variabels';
+@import 'mixins';
+
+
+.media-hero {
+  background-color: $white;
+  border: none;
+  margin: .8rem 0;
+
+  .container {
+    justify-content: center;
+    align-items: center;
+
+    img {
+      @include breakpoint-down (medium) {
+        width: 150px;
+        height: 120px;
+      }
+      width: 180px;
+      height: 150px;
+    }
+  }
+
+  &__title {
+    font-size: $font-lg;
+    line-height: 2rem;
+  }
+
+  &__subtitle {
+    font-size: $font-sm;
+    color: $gray;
+  }
+
+  form button {
+    background-color: $white;
+    font-family: 'Open Sans', sans-serif;
+    color: $secondary;
+    font-weight: 600;
+  }
+}

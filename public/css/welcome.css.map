@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../resources/sass/welcome.scss",
+        "../../resources/sass/_variabels.scss",
+        "../../resources/sass/_mixins.scss"
+    ],
+    "names": [],
+    "file": "welcome.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../resources/sass/recipe.new.scss"
+    ],
+    "names": [],
+    "file": "recipe.new.css"
+}
