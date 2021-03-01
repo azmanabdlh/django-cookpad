@@ -8,9 +8,15 @@
 
 
 {% block head %}
-<link rel="stylesheet" href="{% static 'css/views/recipes/new.css' %}?id=2">
+<link rel="stylesheet" href="{% static 'css/recipe.new.css' %}?id=2">
 {% endblock head %}
 
 {% block content%}
-	{% include 'recipes/_form-second-step.html' %}
+	{% include 'recipes/_form.html' %}
 {% endblock content %}
+
+
+
+{% block footer%}
+<script src="{% static 'js/recipe.new.js' %}"></script>
+{% endblock footer %}

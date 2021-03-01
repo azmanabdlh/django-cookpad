@@ -1,0 +1,50 @@
+{% load static %}
+<section class="media-hero">
+  <div class="container d__flex flex__col">
+    <img height="72px" width="86px" src="{% static 'img/camera.png' %}" alt="create own your recipe">
+    <main>
+      <h3 class="media-hero__title">Tambahkan foto resep</h3>
+      <p class="media-hero__subtitle">
+        Foto hasil akhir masakanmu
+      </p>
+    </main>
+    <div class="media-hero__nav nav__left">
+      <button class="button button-primary">Selanjutnya</button>
+    </div>
+  </div>
+</section>
+
+<section class="form__wrapper">
+  <form method="post">
+    <div class="form__group">
+      <label class="form__label" for="#title">Judul</label>
+      <input type="text" name="title" id="title" class="input" placeholder="Contoh: Sup ayam favorit keluarga">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="#description">Deskripsi</label>
+      <textarea rows="8" name="description" class="input" id="description" placeholder="Cerita dibalik ide masakanmu"></textarea>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="#max">Porsi</label>
+      <div class="form__group__inline">
+        <p class="form__label">2 orang</p>
+        <input type="hidden">
+        <div class="form__buttons">
+          <button type="button" class="button button-outline-secondary">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+            </svg>
+          </button>
+          <button type="button" class="button button-outline-secondary">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>

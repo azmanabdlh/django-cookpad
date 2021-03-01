@@ -12,11 +12,9 @@
 			<h3 class="media-hero__title">Buat baru</h3>
 			<p class="media-hero__subtitle">Bagikan inspirasi masak bagi pengguna lainnya</p>
 			<div class="media-hero__content">
-				<form>
-					<form method="post">
-						{% csrf_token %}
-						<button type="submit" class="button">Tambahkan</button>
-					</form>
+				<form method="post">
+					{% csrf_token %}
+					<button type="submit" class="button">Tambahkan</button>
 				</form>
 			</div>
 		</div>

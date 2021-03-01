@@ -1,0 +1,103 @@
+{% load static %}
+<section class="media-hero">
+  <div class="container d__flex flex__col flex__justify-content__center flex__align-items__center">
+    <main>
+      <h3 class="media-hero__title">Nasi goreng ala Kyoto Japan</h3>
+      <p class="media-hero__subtitle">
+        Cukup untuk 2 porsi
+      </p>
+    </main>
+    <div class="media-hero__nav nav__left">
+      <button class="button button-primary">Terbitkan</button>
+      <button class="button__dropdown button button-outline-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+        </svg>
+      </button>
+      <ul class="nav__dropdown">
+        <li><a href="">Kembali</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="form__wrapper">
+  <form method="post">
+    <div class="form__group">
+      <label class="form__label" for="#title">Bahan-bahan</label>
+      <div class="input__group">
+        <input type="text" name="title" id="title" placeholder="Contoh: Sup ayam favorit keluarga">
+        <button class="button" type="button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+            </path>
+          </svg>
+        </button>
+      </div>
+
+      <button type="button" class="button button__add">Tambahkan bahan</button>
+    </div>
+
+    <hr class="line__dashed"/>
+
+    <div class="form__group">
+      <label class="form__label" for="#title">Langkah-langkah</label>
+
+      <section class="form__group__wrapper">
+        <div class="form__group__inline">
+          <span class="form__label form__label__circle">1</span>
+          <div class="input__group">
+            <input type="text" name="title" id="title" placeholder="Contoh: didihkan air, rebus ayam hingga matang.">
+            <button class="button" type="button">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form__attachments">
+          <div class="form__attachment form__attachment__area">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z">
+              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z">
+              </path>
+            </svg>
+          </div>
+
+          <div class="form__attachment form__attachment__uploaded">
+            <div class="form__attachment__uploaded__buttons">
+              <button type="button" class="button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                  </path>
+                </svg>
+              </button>
+
+              <button type="button" class="button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                  </path>
+                </svg>
+              </button>
+            </div>
+
+            <img alt="your image uploaded" src="https://images.unsplash.com/photo-1603993097397-89c963e325c7?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
+          </div>
+
+        </div>
+      </section>
+
+      <button class="button button__add">Tambahkan langkah</button>
+    </div>
+  </form>
+</section>
